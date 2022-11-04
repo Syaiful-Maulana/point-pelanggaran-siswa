@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: #e5edf9;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  top: 10%;
+  height: 500px;
+  width: 50rem;
+  display: flex;
+  background-color: white;
+  max-width: calc(100% - 20px);
+}
+
+.left-box {
+  width: 60%;
+  float: left;
+  flex-grow: 1;
+}
+
+.right-box {
+  float: right;
+  width: 40%;
+  flex-grow: 1;
+}
+
+.carousel-item {
+  margin-top: 5px;
+}
+
+.item {
+  margin-top: 10%;
+}
+
+#submit {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#myCarousel {
+  margin-top: 40px;
+}
+
+@media screen and (max-height: 400px) {
+  .box {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .box::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+  }
+  .box::-webkit-scrollbar-thumb {
+    background-color: #6f42c1;
+  }
+}
